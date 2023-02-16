@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Portfolio</title>
@@ -119,7 +120,7 @@
             <h2 data-heading="My Intro" class="section__title">About Me</h2>
 
             <div class="about__container container grid">
-                <img src="assets/img/about-img.jpg" alt="" class="about__img">
+                <img src="assets/img/about-img.png" alt="" class="about__img">
 
                 <div class="about__data">
                     <h3 class="about__heading">Hi, I'm Miguel Cuellar, Based in Colombia</h3>
@@ -529,7 +530,7 @@
                         <p class="details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iure soluta vitae.</p>
 
                         <ul class="details__info">
-                            <li>Created - <span>4 dec 2020</span></li>
+                            <li>Created - <span>4 dec 2021</span></li>
                             <li>Technologies - <span>Html, Css</span></li>
                             <li>Role - <span>Frontend</span></li>
                             <li>View - <span><a href="#">www.domain.com</a></span></li>
@@ -551,7 +552,7 @@
                         <p class="details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iure soluta vitae.</p>
 
                         <ul class="details__info">
-                            <li>Created - <span>4 dec 2020</span></li>
+                            <li>Created - <span>8 dec 2019</span></li>
                             <li>Technologies - <span>Html, Css</span></li>
                             <li>Role - <span>Frontend</span></li>
                             <li>View - <span><a href="#">www.domain.com</a></span></li>
@@ -560,10 +561,245 @@
                 </div>
             </div>
         </section>
+
+        <!-- Portfolio Popup -->
+        <div class="portfolio__popup">
+            <div class="portfolio__popup-inner">
+                <div class="portfolio__popup-content grid">
+                    <span class="portfolio__popup-close"><i class="uil uil-times"></i></span>
+
+                    <div class="pp__thumbnail">
+                        <img src="assets/img/work-2.webp" alt="" class="portfolio__popup-img">
+                    </div>
+                    
+                    <div class="portfolio__popup-info">
+                        <div class="portfolio__popup-subtitle">Featured - <span>Design</span></div>
+
+                        <div class="portfolio__popup-body">
+                            <h3 class="details__title">The services provide for design</h3>
+                            <p class="details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iure soluta vitae.</p>
+
+                            <ul class="details__info">
+                                <li>Created - <span>4 dec 2020</span></li>
+                                <li>Technologies - <span>Html, Css</span></li>
+                                <li>Role - <span>Frontend</span></li>
+                                <li>View - <span><a href="#">www.domain.com</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <section class="services section" id="services">
+            <h2 data-heading="Services" class="section__title">What I Offer</h2>
+
+            <div class="services__container container grid">
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-web-grid services__icon"></i>
+                        <h3 class="services__title">Web <br> Designer</h3>
+                    </div>
+
+                    <span class="services__button">
+                        View More <i class="uil uil-arrow-right services__button-icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <h3 class="services__modal-title">Web Designer</h3>
+                            <p class="services__modal-description">Services with more than 3 years of experience. Providing quality work to clients and companies.</p>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">I develop the user interface.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Web page development.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">I create ux element interactions.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">I position your company brand.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Design and mockups of products for companies.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-arrow services__icon"></i>
+                        <h3 class="services__title">UI/UX <br> Designer</h3>
+                    </div>
+
+                    <span class="services__button">
+                        View More <i class="uil uil-arrow-right services__button-icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <h3 class="services__modal-title">UI/UX Designer</h3>
+                            <p class="services__modal-description">Services with more than 3 years of experience. Providing quality work to clients and companies.</p>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">I develop the user interface.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Web page development.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">I create ux element interactions.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">I position your company brand.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Design and mockups of products for companies.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-edit services__icon"></i>
+                        <h3 class="services__title">Branding <br> Designer</h3>
+                    </div>
+
+                    <span class="services__button">
+                        View More <i class="uil uil-arrow-right services__button-icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <h3 class="services__modal-title">Branding Designer</h3>
+                            <p class="services__modal-description">Services with more than 3 years of experience. Providing quality work to clients and companies.</p>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">I develop the user interface.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Web page development.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">I create ux element interactions.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">I position your company brand.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Design and mockups of products for companies.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonial section" id="testimonials">
+            <h2 data-heading="My clients say" class="section__title">Testimonials</h2>
+
+            <div class="testimonial__container container swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial__card swiper-slide">
+                        <div class="testimonial__quote">
+                            <i class="bx bxs-quote-alt-left"></i>
+                        </div>
+
+                        <p class="testimonial__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio eligendi nostrum ea.</p>
+                        <h3 class="testimonial__date">March 27. 2020</h3>
+
+                        <div class="testimonial__profile">
+                            <img src="assets/img/client1.jpg" alt="" class="testimonial__profile-img">
+
+                            <div class="testimonial__profile-data">
+                                <span class="testimonial__profile-name">Lee Doe</span>
+                                <span class="testimonial__profile-detail">Director of a company</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <div class="testimonial__quote">
+                            <i class="bx bxs-quote-alt-left"></i>
+                        </div>
+
+                        <p class="testimonial__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio eligendi nostrum ea.</p>
+                        <h3 class="testimonial__date">March 27. 2020</h3>
+
+                        <div class="testimonial__profile">
+                            <img src="assets/img/client2.jpg" alt="" class="testimonial__profile-img">
+
+                            <div class="testimonial__profile-data">
+                                <span class="testimonial__profile-name">Lee Doe</span>
+                                <span class="testimonial__profile-detail">Director of a company</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <div class="testimonial__quote">
+                            <i class="bx bxs-quote-alt-left"></i>
+                        </div>
+
+                        <p class="testimonial__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio eligendi nostrum ea.</p>
+                        <h3 class="testimonial__date">March 27. 2020</h3>
+
+                        <div class="testimonial__profile">
+                            <img src="assets/img/client3.jpg" alt="" class="testimonial__profile-img">
+
+                            <div class="testimonial__profile-data">
+                                <span class="testimonial__profile-name">Lee Doe</span>
+                                <span class="testimonial__profile-detail">Director of a company</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact section" id="contact">
+            <h2 data-heading="Get om touch" class="section__title">Contact Me</h2>
+        </section>
     </main>
 
     <script src="assets/js/libs/mixitup.min.js"></script>
-    <script src=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
