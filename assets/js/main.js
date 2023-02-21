@@ -1,7 +1,29 @@
 
+/* ===== Show Sidebar ===== */
+
+const navMenu = document.getElementById('sidebar'),
+    navItems = document.querySelectorAll('.nav__item'),
+    navTootle = document.getElementById('nav-toogle'),
+    navClose = document.getElementById('nav-close');
+
+if (navTootle) {
+    navTootle.addEventListener('click', () => navMenu.classList.add('show-sidebar'));
+}
+
+if (navClose) {
+    navClose.addEventListener('click', closeMenu);
+}
+
+navItems.forEach((navItem) => navItem.addEventListener('click', closeMenu));
+
+function closeMenu() {
+    navMenu.classList.remove('show-sidebar');
+}
+
+
 /* ===== Skills Tabs ===== */
 
-const activeClassName = "skills__active";
+const activeClassName = 'skills__active';
 
 const tabs = document.querySelectorAll('[data-target]'),
     tabContent = document.querySelectorAll('[data-content]');
@@ -86,7 +108,7 @@ const swiper = new Swiper('.testimonial__container', {
     loop: true,
     grabCursor: true,
     pagination: {
-        el: ".swiper-pagination",
+        el: '.swiper-pagination',
         clickable: true,
     },
     breakpoints: {
@@ -99,3 +121,54 @@ const swiper = new Swiper('.testimonial__container', {
         },
     },
 });
+
+
+/* ===== Contact ===== */
+
+const inputs = document.querySelectorAll('.input');
+
+function focusAnimation() {
+    let parent = this.parentNode;
+    parent.classList.add('focus');
+}
+
+function blurAnimation() {
+    let parent = this.parentNode;
+
+    if (this.value == "") {
+        parent.classList.remove('focus');
+    }
+}
+
+inputs.forEach((input) => {
+    input.addEventListener('focus', focusAnimation);
+    input.addEventListener('blur', blurAnimation);
+});
+
+
+/* ===== Scroll Sections Active Link ===== */
+
+const sections = document.querySelectorAll('section[id]');
+
+window.addEventListener('scroll', navHighlighter);
+
+function navHighlighter() {
+    let scrollY = window.pageYOffset;
+
+    sections.forEach(section => {
+        const sectionHeight = section.offsetHeight;
+        const sectionTop = section.offsetTop - 50;
+
+        let sectionId = section.getAttribute('id');
+        let linkId = '#' + sectionId + '-link';
+
+        let element = document.querySelector('.nav__menu ' + linkId);
+        if (element == null) return;
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            element.classList.add('active-link');
+        } else {
+            element.classList.remove('active-link');
+        }
+    });
+}

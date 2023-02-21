@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,17 @@
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Portfolio</title>
 </head>
+
 <body>
+    <div class="nav__toogle" id="nav-toogle">
+        <i class="uil uil-bars"></i>
+    </div>
+
     <aside class="sidebar" id="sidebar">
         <nav class="nav">
             <div class="nav__logo">
@@ -23,22 +29,22 @@
                 <div class="menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Home</a>
+                            <a href="#home" class="nav__link active-link" id="home-link">Home</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#about" class="nav__link">About</a>
+                            <a href="#about" class="nav__link" id="about-link">About</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#skills" class="nav__link">Skills</a>
+                            <a href="#skills" class="nav__link" id="skills-link">Skills</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#work" class="nav__link">Work</a>
+                            <a href="#work" class="nav__link" id="work-link">Work</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#services" class="nav__link">Services</a>
+                            <a href="#services" class="nav__link" id="services-link">Services</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#contact" class="nav__link">Contact</a>
+                            <a href="#contact" class="nav__link" id="contact-link">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -46,6 +52,10 @@
 
             <div class="btn__share">
                 <i class="uil uil-share-alt social__share"></i>
+            </div>
+
+            <div class="nav__close" id="nav-close">
+                <i class="uil uil-times"></i>
             </div>
         </nav>
     </aside>
@@ -77,7 +87,8 @@
                 <div class="home__data">
                     <h1 class="home__title">Hi, I'am Miguel</h1>
                     <h3 class="home__subtitle">Software developer</h3>
-                    <p class="home__description">High level experience in web design and development knowledge, producing quality work.</p>
+                    <p class="home__description">High level experience in web design and development knowledge,
+                        producing quality work.</p>
                     <a href="#about" class="button">
                         <i class="uil uil-user button__icon"></i>
                         More About Me
@@ -124,7 +135,8 @@
 
                 <div class="about__data">
                     <h3 class="about__heading">Hi, I'm Miguel Cuellar, Based in Colombia</h3>
-                    <p class="about__description">Web developer, with extensive knowledge and years of experience, working in web technologies and UI/UX design, delivering quality work.</p>
+                    <p class="about__description">Web developer, with extensive knowledge and years of experience,
+                        working in web technologies and UI/UX design, delivering quality work.</p>
 
                     <div class="about__info grid">
                         <div class="about__box">
@@ -439,7 +451,8 @@
 
                     <div class="portfolio__item-details">
                         <h3 class="details__title">The services provide for design</h3>
-                        <p class="details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iure soluta vitae.</p>
+                        <p class="details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Corrupti iure soluta vitae.</p>
 
                         <ul class="details__info">
                             <li>Created - <span>4 dec 2020</span></li>
@@ -461,7 +474,8 @@
 
                     <div class="portfolio__item-details">
                         <h3 class="details__title">Mobile app landing design & app maintain</h3>
-                        <p class="details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iure soluta vitae.</p>
+                        <p class="details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Corrupti iure soluta vitae.</p>
 
                         <ul class="details__info">
                             <li>Created - <span>4 dec 2020</span></li>
@@ -483,7 +497,8 @@
 
                     <div class="portfolio__item-details">
                         <h3 class="details__title">Logo design creativity & application</h3>
-                        <p class="details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iure soluta vitae.</p>
+                        <p class="details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Corrupti iure soluta vitae.</p>
 
                         <ul class="details__info">
                             <li>Created - <span>4 dec 2020</span></li>
@@ -505,7 +520,8 @@
 
                     <div class="portfolio__item-details">
                         <h3 class="details__title">Mobile app landing design & services</h3>
-                        <p class="details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iure soluta vitae.</p>
+                        <p class="details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Corrupti iure soluta vitae.</p>
 
                         <ul class="details__info">
                             <li>Created - <span>4 dec 2020</span></li>
@@ -527,7 +543,8 @@
 
                     <div class="portfolio__item-details">
                         <h3 class="details__title">Design for tecnology & services</h3>
-                        <p class="details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iure soluta vitae.</p>
+                        <p class="details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Corrupti iure soluta vitae.</p>
 
                         <ul class="details__info">
                             <li>Created - <span>4 dec 2021</span></li>
@@ -549,7 +566,8 @@
 
                     <div class="portfolio__item-details">
                         <h3 class="details__title">App for tecnology & services</h3>
-                        <p class="details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iure soluta vitae.</p>
+                        <p class="details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Corrupti iure soluta vitae.</p>
 
                         <ul class="details__info">
                             <li>Created - <span>8 dec 2019</span></li>
@@ -571,13 +589,14 @@
                     <div class="pp__thumbnail">
                         <img src="assets/img/work-2.webp" alt="" class="portfolio__popup-img">
                     </div>
-                    
+
                     <div class="portfolio__popup-info">
                         <div class="portfolio__popup-subtitle">Featured - <span>Design</span></div>
 
                         <div class="portfolio__popup-body">
                             <h3 class="details__title">The services provide for design</h3>
-                            <p class="details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iure soluta vitae.</p>
+                            <p class="details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Corrupti iure soluta vitae.</p>
 
                             <ul class="details__info">
                                 <li>Created - <span>4 dec 2020</span></li>
@@ -611,7 +630,8 @@
                             <i class="uil uil-times services__modal-close"></i>
 
                             <h3 class="services__modal-title">Web Designer</h3>
-                            <p class="services__modal-description">Services with more than 3 years of experience. Providing quality work to clients and companies.</p>
+                            <p class="services__modal-description">Services with more than 3 years of experience.
+                                Providing quality work to clients and companies.</p>
 
                             <ul class="services__modal-services grid">
                                 <li class="services__modal-service">
@@ -654,7 +674,8 @@
                             <i class="uil uil-times services__modal-close"></i>
 
                             <h3 class="services__modal-title">UI/UX Designer</h3>
-                            <p class="services__modal-description">Services with more than 3 years of experience. Providing quality work to clients and companies.</p>
+                            <p class="services__modal-description">Services with more than 3 years of experience.
+                                Providing quality work to clients and companies.</p>
 
                             <ul class="services__modal-services grid">
                                 <li class="services__modal-service">
@@ -697,7 +718,8 @@
                             <i class="uil uil-times services__modal-close"></i>
 
                             <h3 class="services__modal-title">Branding Designer</h3>
-                            <p class="services__modal-description">Services with more than 3 years of experience. Providing quality work to clients and companies.</p>
+                            <p class="services__modal-description">Services with more than 3 years of experience.
+                                Providing quality work to clients and companies.</p>
 
                             <ul class="services__modal-services grid">
                                 <li class="services__modal-service">
@@ -728,7 +750,7 @@
         </section>
 
         <!-- Testimonials -->
-        <section class="testimonial section" id="testimonials">
+        <section class="testimonial section">
             <h2 data-heading="My clients say" class="section__title">Testimonials</h2>
 
             <div class="testimonial__container container swiper">
@@ -738,7 +760,8 @@
                             <i class="bx bxs-quote-alt-left"></i>
                         </div>
 
-                        <p class="testimonial__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio eligendi nostrum ea.</p>
+                        <p class="testimonial__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Odio eligendi nostrum ea.</p>
                         <h3 class="testimonial__date">March 27. 2020</h3>
 
                         <div class="testimonial__profile">
@@ -756,7 +779,8 @@
                             <i class="bx bxs-quote-alt-left"></i>
                         </div>
 
-                        <p class="testimonial__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio eligendi nostrum ea.</p>
+                        <p class="testimonial__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Odio eligendi nostrum ea.</p>
                         <h3 class="testimonial__date">March 27. 2020</h3>
 
                         <div class="testimonial__profile">
@@ -774,7 +798,8 @@
                             <i class="bx bxs-quote-alt-left"></i>
                         </div>
 
-                        <p class="testimonial__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio eligendi nostrum ea.</p>
+                        <p class="testimonial__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Odio eligendi nostrum ea.</p>
                         <h3 class="testimonial__date">March 27. 2020</h3>
 
                         <div class="testimonial__profile">
@@ -795,11 +820,124 @@
         <!-- Contact -->
         <section class="contact section" id="contact">
             <h2 data-heading="Get on touch" class="section__title">Contact Me</h2>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <div class="uil uil-envelope-edit contact__card-icon"></div>
+
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">user@gmail.com</span>
+
+                            <span class="contact__button">
+                                Write me <i class="uil uil-arrow-right contact__button-icon"></i>
+                            </span>
+                        </div>
+
+                        <div class="contact__card">
+                            <div class="uil uil-whatsapp contact__card-icon"></div>
+
+                            <h3 class="contact__card-title">WhatsApp</h3>
+                            <span class="contact__card-data">3168580636</span>
+
+                            <span class="contact__button">
+                                Write me <i class="uil uil-arrow-right contact__button-icon"></i>
+                            </span>
+                        </div>
+
+                        <div class="contact__card">
+                            <div class="uil uil-facebook-messenger contact__card-icon"></div>
+
+                            <h3 class="contact__card-title">Messenger</h3>
+                            <span class="contact__card-data">user.fb123</span>
+
+                            <span class="contact__button">
+                                Write me <i class="uil uil-arrow-right contact__button-icon"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <form action="" class="contact__form">
+                        <div class="input__container">
+                            <input type="text" class="input" id="username">
+                            <label for="username">Username</label>
+                            <span>Username</span>
+                        </div>
+
+                        <div class="input__container">
+                            <input type="email" class="input" id="email">
+                            <label for="email">Email</label>
+                            <span>Email</span>
+                        </div>
+
+                        <div class="input__container">
+                            <input type="tel" class="input" id="phone">
+                            <label for="phone">Phone</label>
+                            <span>Phone</span>
+                        </div>
+
+                        <div class="input__container textarea">
+                            <textarea class="input" id="message"></textarea>
+                            <label for="message">Message</label>
+                            <span>Message</span>
+                        </div>
+
+                        <button type="submit" class="button">
+                            <i class="uil uil-navigator button-icon"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
         </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Mariam</h1>
+                        <span class="footer__subtitle">Frontend developer</span>
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#services" class="footer__link">Services</a>
+                        </li>
+                        <li>
+                            <a href="#work" class="footer__link">Work</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__socials">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+
+                        <a href="https://www.twitter.com/" target="_blank" class="footer__social">
+                            <i class="uil uil-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="footer__copy">&#169; Angels. All right reserved</p>
+            </div>
+        </footer>
     </main>
 
     <script src="assets/js/libs/mixitup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
